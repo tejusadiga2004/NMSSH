@@ -16,6 +16,8 @@
 		18B4FE91188CB2BB004E05FF /* libssh2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 18B4FE8D188CB2BB004E05FF /* libssh2.a */; };
 		18E4D2391815F6F600432102 /* NMSSHLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E4D2381815F6F600432102 /* NMSSHLogger.m */; };
 		18E4D23A1815F70D00432102 /* NMSSHLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = E4F1CBB217206D730025EBFC /* NMSSHLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1AE7DEBA2747D1FF00F82AB7 /* libgcrypt.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AE7DEB92747D1FC00F82AB7 /* libgcrypt.a */; };
+		1AE7DEBC2747D22800F82AB7 /* libgpg-error.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AE7DEBB2747D22600F82AB7 /* libgpg-error.a */; };
 		4A04ECAE174F51E8006DD8E7 /* NMSSHChannelDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 18F9DABF17302F7F004CECAA /* NMSSHChannelDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6EB9E8051887F52C003A9BE4 /* NMSFTPFile.h in Headers */ = {isa = PBXBuildFile; fileRef = 6EB9E8031887F52C003A9BE4 /* NMSFTPFile.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6EB9E8061887F52C003A9BE4 /* NMSFTPFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EB9E8041887F52C003A9BE4 /* NMSFTPFile.m */; };
@@ -91,6 +93,8 @@
 		18B4FE8D188CB2BB004E05FF /* libssh2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libssh2.a; sourceTree = "<group>"; };
 		18E4D2381815F6F600432102 /* NMSSHLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NMSSHLogger.m; sourceTree = "<group>"; };
 		18F9DABF17302F7F004CECAA /* NMSSHChannelDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NMSSHChannelDelegate.h; sourceTree = "<group>"; };
+		1AE7DEB92747D1FC00F82AB7 /* libgcrypt.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libgcrypt.a; path = "NMSSH-OSX/Libraries/lib/libgcrypt.a"; sourceTree = "<group>"; };
+		1AE7DEBB2747D22600F82AB7 /* libgpg-error.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libgpg-error.a"; path = "NMSSH-OSX/Libraries/lib/libgpg-error.a"; sourceTree = "<group>"; };
 		6EB9E8031887F52C003A9BE4 /* NMSFTPFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NMSFTPFile.h; sourceTree = "<group>"; };
 		6EB9E8041887F52C003A9BE4 /* NMSFTPFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NMSFTPFile.m; sourceTree = "<group>"; };
 		6EE908A4188D597300997E11 /* NMSFTPFileTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NMSFTPFileTests.m; sourceTree = "<group>"; };
@@ -140,7 +144,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				188B5E3C1C7CB7D0003A6AFD /* libssl.a in Frameworks */,
+				1AE7DEBC2747D22800F82AB7 /* libgpg-error.a in Frameworks */,
 				E4E96D88158E10FD002E6E0A /* Cocoa.framework in Frameworks */,
+				1AE7DEBA2747D1FF00F82AB7 /* libgcrypt.a in Frameworks */,
 				E4D99AA415DE15B300EB5615 /* libz.dylib in Frameworks */,
 				188B5E3B1C7CB7D0003A6AFD /* libcrypto.a in Frameworks */,
 				18B4FE91188CB2BB004E05FF /* libssh2.a in Frameworks */,
@@ -229,6 +235,8 @@
 		E4E96D86158E10FD002E6E0A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1AE7DEBB2747D22600F82AB7 /* libgpg-error.a */,
+				1AE7DEB92747D1FC00F82AB7 /* libgcrypt.a */,
 				E4E96D87158E10FD002E6E0A /* Cocoa.framework */,
 				E4D99AA315DE15B300EB5615 /* libz.dylib */,
 				E4D99AA115DE15A600EB5615 /* libcrypto.dylib */,
@@ -409,13 +417,14 @@
 			isa = PBXProject;
 			attributes = {
 				LastTestingUpgradeCheck = 0510;
-				LastUpgradeCheck = 1000;
+				LastUpgradeCheck = 1310;
 			};
 			buildConfigurationList = E4E96D7D158E10FD002E6E0A /* Build configuration list for PBXProject "NMSSH" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = E4E96D78158E10FD002E6E0A;
